@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Playground 🎮</h1>
+            <p class="subtitle">Press any key to see its code below!</p>
+            <div id="key-display">Press a key...</div>
+        </header>
+
+        <!-- Event Handling Section -->
+        <section id="event-handling">
+            <h2>Event Handling 🎈</h2>
+            <button id="click-me">Click Me!</button>
+            <div id="hover-area">Hover over me</div>
+            <button id="secret-button">Try a double-click!</button>
+            <div id="event-output">Events will show here...</div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-elements">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <!-- Color changing button -->
+            <button id="color-button">Change My Color</button>
+            
+            <!-- Image Gallery -->
+            <div class="gallery-container">
+                <h3>Image Gallery</h3>
+                <div class="gallery">
+                    <img src="https://picsum.photos/id/237/200/150" alt="Image 1" class="gallery-img">
+                    <img src="https://picsum.photos/id/238/200/150" alt="Image 2" class="gallery-img">
+                    <img src="https://picsum.photos/id/239/200/150" alt="Image 3" class="gallery-img">
+                    <img src="https://picsum.photos/id/240/200/150" alt="Image 4" class="gallery-img">
+                </div>
+                <div class="gallery-nav">
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+                <div id="current-image">Image 1 of 4</div>
+            </div>
+            
+            <!-- Accordion -->
+            <div class="accordion">
+                <h3>Accordion Panel</h3>
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 1</div>
+                    <div class="accordion-content">
+                        <p>This is the content for section 1. Click on any header to expand or collapse!</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 2</div>
+                    <div class="accordion-content">
+                        <p>Here's some content for section 2. JavaScript makes this interactive!</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Section 3</div>
+                    <div class="accordion-content">
+                        <p>And finally some content for section 3. Isn't this accordion cool?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-validation">
+            <h2>Form Validation 📋✅</h2>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="username">Username*</label>
+                    <input type="text" id="username" name="username" required>
+                    <div class="feedback" id="username-feedback"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="feedback" id="email-feedback"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="feedback" id="password-feedback"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password*</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div class="feedback" id="confirm-feedback"></div>
+                </div>
+                
+                <div class="password-toggle">
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password">Show password</label>
+                </div>
+                
+                <button type="submit" id="submit-btn">Submit</button>
+                <div id="form-result"></div>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
